@@ -1,0 +1,30 @@
+/* Layout dasar halaman beranda: body, reset, pembungkus .wadah */
+
+body.beranda {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #fafbfc;
+    overflow-x: hidden;
+}
+
+.beranda *,
+.beranda *::before,
+.beranda *::after { box-sizing: border-box; }
+
+.beranda a { text-decoration: none; }
+
+.wadah {
+    width: 100%;
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+@media (min-width: 1024px) {
+    .wadah { padding: 0 2rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .beranda * { transition: none !important; }
+}

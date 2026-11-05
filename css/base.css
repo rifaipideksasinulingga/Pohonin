@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap");
+
+/* ---------- 1. Variabel & dasar ---------- */
+:root {
+    --hijau-tua: #0b4a1f;
+    --hijau-sage: #6b8f75;
+    --hijau-teal: #214a46;
+    --abu-teks: #6f6f6f;
+    --abu-garis: #c9c9c9;
+    --abu-border: #8a8a8a;
+
+    --forest-50: #f0fdf4;
+    --forest-100: #dcfce7;
+    --forest-600: #16a34a;
+    --forest-700: #15803d;
+    --forest-800: #166534;
+
+    --font-judul: "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+    --font-isi: "Plus Jakarta Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+body {
+    font-family: var(--font-isi);
+    color: #1f2937;
+    background-color: #fff;
+    -webkit-font-smoothing: antialiased;
+}
+
+a { color: var(--hijau-tua); }
+a:hover { color: var(--hijau-sage); }
+
+:focus-visible {
+    outline: 3px solid var(--hijau-sage);
+    outline-offset: 2px;
+}

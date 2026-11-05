@@ -1,0 +1,96 @@
+/* Header / navbar */
+
+/* ---------- Header / navbar ---------- */
+.header-utama {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background: rgba(255, 255, 255, .9);
+    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid #f3f4f6;
+}
+
+.header-isi {
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* menu */
+.menu {
+    display: none;
+    align-items: center;
+    gap: 2rem;
+    font-weight: 600;
+    color: #4b5563;
+}
+
+.menu a {
+    position: relative;
+    padding: .25rem 0;
+    color: inherit;
+    transition: color .2s;
+}
+
+.menu a:hover { color: var(--forest-700); }
+
+.menu a.aktif { color: var(--forest-700); }
+
+.menu a.aktif::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2.5px;
+    background: var(--forest-600);
+    border-radius: 999px;
+}
+
+/* tombol ikon kanan */
+.aksi {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.tombol-ikon {
+    padding: .625rem;
+    display: inline-flex;
+    background: none;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color .2s, border-color .2s;
+}
+
+.tombol-ikon img { width: 1.25rem; height: 1.25rem; }
+
+.tombol-ikon:hover {
+    background: var(--forest-50);
+    border-color: var(--forest-100);
+}
+
+.tombol-relawan {
+    display: none;
+    padding: .5rem 1rem;
+    font-size: .875rem;
+    font-weight: 600;
+    color: #fff !important;
+    background: var(--forest-700);
+    border-radius: .5rem;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .08);
+    transition: background-color .2s;
+}
+
+.tombol-relawan:hover { background: var(--forest-800); }
+
+@media (min-width: 768px) {
+    .menu { display: flex; }
+}
+
+@media (min-width: 1024px) {
+    .tombol-relawan { display: inline-flex; }
+}

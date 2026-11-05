@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="style.css">
+    <title>Donasi</title>
+    <script src="js/auth.js"></script>
+</head>
+
+<body data-wajib-login="true">
+    <div class="donasi-body">
+    <div class="kotak-nominal">
+        <span class="close" id="tutup">x</span>
+        <a href="beranda.html" class="merek">
+            <span class="merek-logo"><img src="image/logo.svg" alt="Logo Pohonin"></span>
+            <span class="merek-nama">Pohonin</span>
+        </a>
+
+        <div class="proyek-judulh2">
+            <h1>Donasi Sekarang</h1>
+            <p>Pilih jumlah donasi atau masukkan jumlah sendiri</p>
+        </div>
+
+        <div class="nominal-grid">
+            <div class="nominal" data-nominal="10000"><h3>Rp 10.000</h3><p>1 Pohon</p></div>
+            <div class="nominal" data-nominal="50000"><h3>Rp 50.000</h3><p>5 Pohon</p></div>
+            <div class="nominal" data-nominal="100000"><h3>Rp 100.000</h3><p>10 Pohon</p></div>
+            <div class="nominal" data-nominal="500000"><h3>Rp 500.000</h3><p>50 Pohon</p></div>
+        </div>
+
+        <div class="kotak input">
+            <div class="donasi-input">
+                <span>Rp</span>
+                <input type="number" id="jumlah" value="100000" min="10000" step="10000" placeholder="Masukkan nominal">
+            </div>
+        </div>
+        <p id="infoPohon" class="info-pohon"></p>
+        <button class="button" id="btnLanjut">Lanjutkan</button>
+    </div>
+    </div>
+    <script src="js/donasi.js"></script>
+</body>
+</html>

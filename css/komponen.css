@@ -1,0 +1,34 @@
+/* Komponen bersama: logo + nama merek (dipakai header, footer, donasi) */
+
+/* logo + nama */
+.merek {
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+    color: #111827;
+}
+
+.merek-logo {
+    width: 2.75rem;
+    height: 2.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--forest-50);
+    border: 1px solid var(--forest-100);
+    border-radius: .75rem;
+    transition: background-color .2s;
+}
+
+.merek-logo img { width: 1.5rem; height: 1.5rem; object-fit: contain; }
+
+.merek:hover .merek-logo { background: var(--forest-100); }
+
+.merek-nama {
+    font-size: 1.25rem;
+    font-weight: 700;
+    letter-spacing: -.01em;
+    transition: color .2s;
+}
+
+.merek:hover .merek-nama { color: var(--forest-700); }

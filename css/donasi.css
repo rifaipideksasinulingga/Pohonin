@@ -1,0 +1,56 @@
+/* Halaman donasi */
+
+/* body donasi */
+.donasi-body {
+    background-color: #166534;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+}
+
+.kotak-nominal {
+    position: relative;
+    max-width: 1200px;
+    margin: 8vh auto;
+    background: #fff;
+    padding: 50px 70px 80px;
+    border: none;
+    border-radius: 80px;
+}
+
+/* Donasi */
+.nominal-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin-bottom: 100px;
+}
+
+.nominal {
+    padding: 35px 10px;
+    background: white;
+    border: 5px solid var(--hijau-teal);
+    border-radius: 25px;
+    text-align: center;
+    cursor: pointer;
+    transition: .2s;
+}
+
+/* Tombol tutup, hover & pilihan nominal, info pohon, tombol lanjutkan */
+.close { position: absolute; top: 1.5rem; right: 2.5rem; font-size: 2rem; cursor: pointer; color: var(--abu-teks); }
+.close:hover { color: var(--hijau-tua); }
+
+.nominal:hover { background: var(--forest-50); transform: translateY(-3px); box-shadow: 0 10px 15px rgba(0, 0, 0, .12); }
+.nominal.aktif { background: var(--hijau-teal); color: #fff; }
+
+.info-pohon { margin: 1rem 0 0; font-weight: 700; text-align: center; color: var(--forest-700); }
+.info-pohon.salah { color: #b91c1c; }
+
+.kotak-nominal .button {
+    display: block; width: 100%; margin-top: 1.5rem; padding: .75rem 1rem;
+    font-weight: 700; font-size: 1.05rem; color: #fff; background-color: var(--hijau-teal);
+    border: none; border-radius: 10px; cursor: pointer; transition: background-color .2s;
+}
+.kotak-nominal .button:hover { background-color: var(--hijau-tua); }
+.kotak-nominal .button:disabled { opacity: .6; cursor: default; }

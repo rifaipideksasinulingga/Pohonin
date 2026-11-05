@@ -1,0 +1,15 @@
+/* ==========================================================
+   style.css - file pusat. Isinya hanya daftar file CSS di folder css/.
+   Urutan import penting: base dulu, lalu layout, komponen, halaman.
+   ========================================================== */
+
+@import url("css/base.css");
+@import url("css/layout.css");
+@import url("css/komponen.css");
+@import url("css/header.css");
+@import url("css/hero.css");
+@import url("css/statistik.css");
+@import url("css/proyek.css");
+@import url("css/footer.css");
+@import url("css/auth.css");
+@import url("css/donasi.css");

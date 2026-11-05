@@ -1,0 +1,82 @@
+/* Hero & tombol utama/sekunder */
+
+/* ---------- Hero ---------- */
+.hero {
+    position: relative;
+    padding: 3rem 0 4rem;
+    background: radial-gradient(circle at 10% 20%,
+        rgba(220, 252, 231, .45) 0%,
+        rgba(240, 253, 244, .15) 50%,
+        rgba(255, 255, 255, 0) 80%);
+}
+
+.hero-isi { max-width: 48rem; }
+
+.hero h1 {
+    margin: 0 0 1.5rem;
+    font-size: 2.25rem;
+    font-weight: 800;
+    line-height: 1.15;
+    letter-spacing: -.025em;
+    color: #111827;
+}
+
+.hero h1 span { display: block; }
+.hero h1 .hijau { color: var(--forest-700); }
+
+.hero p {
+    max-width: 36rem;
+    margin: 0 0 2rem;
+    font-size: 1rem;
+    line-height: 1.625;
+    color: #4b5563;
+}
+
+.hero-tombol {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+}
+
+.btn-utama,
+.btn-sekunder {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: .875rem 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: .75rem;
+    transition: background-color .2s, border-color .2s, color .2s, box-shadow .2s, transform .2s;
+}
+
+.btn-utama {
+    color: #fff !important;
+    background: #555f52;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, .1);
+}
+
+.btn-utama:hover { background: var(--forest-800); box-shadow: 0 10px 15px rgba(0, 0, 0, .12); }
+
+.btn-sekunder {
+    color: #374151 !important;
+    background: #fff;
+    border: 1px solid #d1d5db;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .06);
+}
+
+.btn-sekunder:hover { border-color: var(--forest-600); color: var(--forest-700) !important; }
+
+.btn-utama:active,
+.btn-sekunder:active { transform: scale(.95); }
+
+@media (min-width: 640px) {
+    .hero h1 { font-size: 3rem; }
+    .hero p { font-size: 1.125rem; }
+}
+
+@media (min-width: 1024px) {
+    .hero { padding: 4rem 0 5rem; }
+    .hero h1 { font-size: 3.75rem; }
+}
